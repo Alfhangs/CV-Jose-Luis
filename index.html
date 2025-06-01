@@ -5,37 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>José Luis Aranda | Unity Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header class="hero">
         <h1>José Luis Aranda Maestro</h1>
         <p>Unity Developer | Game Programmer</p>
         <a href="#about" class="btn">Entrar</a>
+        <a href="CV_JoseLuisAranda.pdf" class="btn secondary" download>Descargar CV</a>
     </header>
 
     <main>
-        <section id="about" class="section">
+        <section id="about" class="section fade-in">
             <h2>Sobre mí</h2>
             <p>
                 Apasionado por el desarrollo de videojuegos. Versátil, constante y siempre en evolución. Especializado en Unity y C#.
             </p>
         </section>
 
-        <section id="skills" class="section">
+        <section id="skills" class="section fade-in">
             <h2>Habilidades</h2>
-            <ul class="skills">
-                <li>Unity 3D</li>
-                <li>C#</li>
-                <li>Git</li>
-                <li>.NET</li>
-                <li>MySQL</li>
-                <li>Unreal Engine</li>
-                <li>C++</li>
-                <li>Scrum / Agile</li>
-            </ul>
+            <div class="skills">
+                <div class="skill-card">🎯 Unity 3D</div>
+                <div class="skill-card">🧠 C#</div>
+                <div class="skill-card">🔧 Git</div>
+                <div class="skill-card">⚙️ .NET</div>
+                <div class="skill-card">🗄️ MySQL</div>
+                <div class="skill-card">🎮 Unreal Engine</div>
+                <div class="skill-card">📦 C++</div>
+                <div class="skill-card">📈 Scrum / Agile</div>
+            </div>
         </section>
 
-        <section id="experience" class="section">
+        <section id="experience" class="section fade-in">
             <h2>Experiencia</h2>
             <div class="job">
                 <h3>Killbug Studio - Unity Developer</h3>
@@ -54,18 +56,35 @@
             </div>
         </section>
 
-        <section id="projects" class="section">
+        <section id="projects" class="section fade-in">
             <h2>Proyectos</h2>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/UnGvNEUr2Sg" frameborder="0" allowfullscreen></iframe>
+            </div>
             <ul>
                 <li><a href="https://play.google.com/store/apps/details?id=com.KillbugStudio.BeachCafe">Beach Café (Google Play)</a></li>
                 <li><a href="https://store.steampowered.com/search/?developer=Killbug%20Studio">Beach Café (Steam)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=UnGvNEUr2Sg">Gameplay Video</a></li>
             </ul>
         </section>
 
-        <section id="contact" class="section">
+        <section id="gallery" class="section fade-in">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="screenshot1.jpg" alt="Proyecto 1">
+                <img src="screenshot2.jpg" alt="Proyecto 2">
+                <img src="screenshot3.jpg" alt="Proyecto 3">
+            </div>
+        </section>
+
+        <section id="contact" class="section fade-in">
             <h2>Contacto</h2>
-            <p>Email: <a href="mailto:joseluisdev92@gmail.com">joseluisdev92@gmail.com</a></p>
+            <form action="https://formspree.io/f/xwkgnlgv" method="POST">
+                <input type="text" name="name" placeholder="Tu nombre" required />
+                <input type="email" name="_replyto" placeholder="Tu email" required />
+                <textarea name="message" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p><a href="mailto:joseluisdev92@gmail.com">joseluisdev92@gmail.com</a></p>
             <p><a href="https://www.linkedin.com/in/jose-luis-aranda-maestro/">LinkedIn</a></p>
             <p><a href="https://joseluisarandamaes.wixsite.com/portfolio">Portfolio actual</a></p>
         </section>
